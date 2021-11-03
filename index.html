@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Space Countdown</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karantina:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>CHOOKITY POK!</h1>
+    <div class="container">
+        <p class="time"><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></p>
+
+        <button class="btn" id="set-btn">Set Alarm</button>
+    </div>
+
+    <div id="overlay">
+        <div id="set-timer">
+            <div class="inputs">
+                <input type="number" id="h-input"><span> hours </span>
+                <input type="number" id="m-input"><span> minutes </span>
+                <input type="number" id="s-input"><span> seconds </span><br>
+            </div>
+            <p id="warning">WARNING: minutes and seconds can not be over 60 nor be under 0!</p>
+            <button id="go-btn">Ready, Set, Go!</button>
+        </div>
+    </div>
+
+    <div id='scnd-overlay'>
+        <div class="stop">
+            <p class="saved-time">IT'S <span id="saved-hours">00</span>:<span id="saved-minutes">00</span>:<span
+                    id="saved-seconds">00</span>
+            </p>
+            <button id="stop-btn">STOP ALARM</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
